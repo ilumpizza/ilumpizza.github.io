@@ -14,7 +14,7 @@
 	<meta name="theme-color" content="#ffffff">
 	<meta charset="UTF-8">
 	<title>ilumPizza</title>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="style/style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -22,6 +22,9 @@
 <body>
 	<!-- <div class='preloader'></div> -->
 	<div id="navmenu">
+		<a href="create.html"><div class="line bt">
+			<p>Create pizza</p>
+		</div></a>
 		<a href=""><div class="line bt">
 			<p>Catalog</p>
 		</div></a>
@@ -33,25 +36,24 @@
 		</div></a>
 	</div>
 	<header>
-		<ul>
-			<li class="hov-logo"><a href=""><img src="img/logo.png" alt="" class="logo"></a></li>
+		<ul class="n">
+			<li class="hov-logo"><a href="#section-1"><img src="img/logo.png" alt="" class="logo"></a></li>
 			<li class="hide"><a href="create.html">Create pizza</a></li>
-			<li class="hide"><a href="">Catalog</a></li>
-			<li class="hide"><a href="">Delivery</a></li>
+			<li class="hide"><a href="catalog.html">Catalog</a></li>
+			<li class="hide"><a href="delivery.html">Delivery</a></li>
 			<li class="hide pr"><a href="">Contact</a></li>
 			<li class="nav"><a href="#" id="showHideContent"><i class="fas fa-bars"></i></a></li>
 		</ul>
+		<ul class="log">
+			<li class="hide"><a href=""><img src="img/shopping-basket.png" alt="" class="bas"></a></li>
+			<li class="hide"><a href="">Log In</a></li>
+		</ul>
 	</header>
 	<div id="section-1">
-		<div id="back"></div>
-		<div class="cover1">
-			<img src="img/pizzamain.png" alt="" class="pic">
-		</div>
-		<div class="cover2">
-			<!-- <a href=""><img src="img/button.png" alt="" class="but"></a> -->
-			<a href="#"><span class="button"><i class="fas fa-long-arrow-alt-down mr"></i> Your own pizza <i class="fas fa-long-arrow-alt-down ml"></i></span></a>
-		</div>
-	</div>	
+		<div class="img-block"><img src="img/pizzabox2.png" alt=""></div>
+		<p><span class="create">Create your own pizza</span>Use our tool to create pizza with ingredients<br> you want and nothing much</p>
+		<span class="arrow"><a href="#section-2"><img src="img/down-arrow.png" alt=""></i></a></span>
+	</div>
 	<div id="section-2">
 		<!-- <div class="morepart2">
 			<div class="half-2"></div>
