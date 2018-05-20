@@ -139,4 +139,10 @@
 	hr{
 		width: 50%;
 	}
+	#price{
+		padding: 10px;
+	}
+	.custom-btn{
+		margin-right: 0;
+	}
 }
