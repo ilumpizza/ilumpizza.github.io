@@ -1154,3 +1154,6 @@ textarea{
 .column-mob>*{
 	margin: 40px 0;
 }
+iframe{
+	border: 0;
+}
