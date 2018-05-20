@@ -67,8 +67,13 @@
 		-o-flex-wrap: wrap;
 		flex-wrap: wrap;
 	}
-	.detail, .map, .fifty, .inp{
+	.detail, .fifty, .inp{
 		width: 100%;
+	}
+	.map{
+		width: 90%;
+    margin: auto;
+    padding: 0;
 	}
 	.addin{
 		width: 80%;
