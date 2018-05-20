@@ -1,0 +1,59 @@
+@media only screen and (max-width : 1000px) {
+	.nav{
+		display: block;
+		padding-right: 0;
+		margin-right: 10px;
+	}
+	.hide{
+		display: none;
+	}
+	ul{
+		width: 95%;
+		margin-right: 2.5%;
+		padding: 0;
+	}
+	ul.n {
+		width: 100%;
+		justify-content: space-between;
+	}
+	.hov-logo{
+		align-self: center;
+	}
+	.preloader{
+		background-size: 50%;
+	}
+	.pic {
+		width: 80%;
+		margin-left: 10%;
+	}
+	#feature{
+		-webkit-flex-wrap: wrap;
+		-moz-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-o-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
+	#section-2{
+		height: auto;
+		background-position: center;
+	}
+	.top{
+		padding: 40px 0;
+	}
+	#section-4{
+		display: none;
+	}
+	.create{
+		line-height: 1.2;
+	}
+	.img-block>img {
+		width: 100%;
+	}
+	.foot-bl{
+		width: 100%;
+		text-align: center;
+	}
+	.inner-foot{
+		padding-bottom: 0;
+	}
+}

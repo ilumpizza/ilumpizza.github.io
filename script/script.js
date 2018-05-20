@@ -14,8 +14,6 @@
     $('header').removeClass("sticky");
   }
 });
-
-
 /*yakir*/ $('a[href*="#"]')
   // Remove links that don't actually link to anything
   .not('[href="#"]')
@@ -51,7 +49,6 @@
       }
     }
   });
-
   /*nav menu*/$(document).ready(function(){
     $("#showHideContent").click(function () {
       if ($("#navmenu").is(":hidden")) {
@@ -62,8 +59,6 @@
       return false;
     });
   });
-
-
   /*price maker*/ 
   var a = 0, b = 5, c = 5;
   updatePrice();
@@ -78,18 +73,19 @@
   }
   updatePrice();
 })
-
   function updatePrice(){
    var price = parseInt(a) + parseInt(b) + parseInt(c);
    $('#pr').html(price +' ₴');
+   $('#prr').html(price +' ₴');
+   $('#prdev').html(price + 8 + ' ₴');
  }
 
  $("#but").click(function () {
   if ($("#sshow").is(":hidden")) {
-    $("#sshow").toggle();
+    $("#sshow").fadeIn("fast");
     $("#button").addClass("border");
   } else {
-    $("#sshow").toggle();
+    $("#sshow").fadeOut("fast");
     $("#button").removeClass("border");
   }
   return false;
@@ -106,10 +102,10 @@
 });
  $("#but3").click(function () {
   if ($("#sshow3").is(":hidden")) {
-    $("#sshow3").show("fast");
+    $("#sshow3").fadeIn("fast");
     $("#button3").addClass("border");
   } else {
-    $("#sshow3").hide("fast");
+    $("#sshow3").fadeOut("fast");
     $("#button3").removeClass("border");
   }
   return false;
@@ -206,7 +202,6 @@
   }
   return false;
 });
-
 // $(document).ready(function(){
 //     $("#button").click(function(){
 //         $("#sshow").toggle();
@@ -223,9 +218,6 @@
 //         $("#sshow3").toggle();
 //     });
 // });;
-
-
-
 $('input[name=chee]').click(function(){
 	b=$(this).attr('price');
   updatePrice()
@@ -234,46 +226,159 @@ $('input[name=psize]').click(function(){
   c=$(this).attr('price');
   updatePrice()
 });
-
-
-
-
-
-
-
-
-
 $("#n25").click(function () {
   if ( $(".pizza-block>*").hasClass("low") ) {
-  $(".pizza-block>*").removeClass("mid");
-  $(".pizza-block>*").removeClass("bigger");
+    $(".pizza-block>*").removeClass("mid");
+    $(".pizza-block>*").removeClass("bigger");
   }
   else{
     $(".pizza-block>*").addClass("low");
     $(".pizza-block>*").removeClass("mid");
-  $(".pizza-block>*").removeClass("bigger");
+    $(".pizza-block>*").removeClass("bigger");
   }
 });
 $("#n30").click(function () {
   if ( $(".pizza-block>*").hasClass("mid") ) {
-  $(".pizza-block>*").removeClass("low");
-  $(".pizza-block>*").removeClass("bigger");
+    $(".pizza-block>*").removeClass("low");
+    $(".pizza-block>*").removeClass("bigger");
   }
   else{
     $(".pizza-block>*").addClass("mid");
     $(".pizza-block>*").removeClass("low");
-  $(".pizza-block>*").removeClass("bigger");
+    $(".pizza-block>*").removeClass("bigger");
   }
 });
 $("#n35").click(function () {
   if ( $(".pizza-block>*").hasClass("bigger") ) {
-  $(".pizza-block>*").removeClass("mid");
-  $(".pizza-block>*").removeClass("low");
+    $(".pizza-block>*").removeClass("mid");
+    $(".pizza-block>*").removeClass("low");
   }
   else{
     $(".pizza-block>*").addClass("bigger");
     $(".pizza-block>*").removeClass("mid");
-  $(".pizza-block>*").removeClass("low");
+    $(".pizza-block>*").removeClass("low");
   }
 });
+var tomat = document.getElementById('tomat');
+var sali = document.getElementById('sali');
+var bas = document.getElementById('bas');
+var hot = document.getElementById('hot');
+var bac = document.getElementById('bac');
+var oli = document.getElementById('oli');
+var oni = document.getElementById('oni');
+var pine = document.getElementById('pine');
+var mus = document.getElementById('mus');
+var pep = document.getElementById('pep');
+var message = document.getElementById('mes');
+$("#myBtn").click(function () {
+  if ( $("#button").hasClass("border") ) {
+    tomat.style.display = "inline";
+  }
+  else{
+    tomat.style.display = "none";
+  }
+});
+$("#myBtn").click(function () {
+  if ( $("#button3").hasClass("border") ) {
+    mus.style.display = "inline";
+  }
+  else{
+    mus.style.display = "none";
+  }
+});
+$("#myBtn").click(function () {
+  if ( $("#button9").hasClass("border") ) {
+    pep.style.display = "inline";
+  }
+  else{
+    pep.style.display = "none";
+  }
+});
+$("#myBtn").click(function () {
+  if ( $("#button8").hasClass("border") ) {
+    pine.style.display = "inline";
+  }
+  else{
+    pine.style.display = "none";
+  }
+});
+$("#myBtn").click(function () {
+  if ( $("#button5").hasClass("border") ) {
+    oni.style.display = "inline";
+  }
+  else{
+    oni.style.display = "none";
+  }
+});
+$("#myBtn").click(function () {
+  if ( $("#button2").hasClass("border") ) {
+    oli.style.display = "inline";
+  }
+  else{
+    oli.style.display = "none";
+  }
+});
+$("#myBtn").click(function () {
+  if ( $("#button6").hasClass("border") ) {
+    bac.style.display = "inline";
+  }
+  else{
+    bac.style.display = "none";
+  }
+});
+$("#myBtn").click(function () {
+  if ( $("#button10").hasClass("border") ) {
+    hot.style.display = "inline";
+  }
+  else{
+    hot.style.display = "none";
+  }
+});
+$("#myBtn").click(function () {
+  if ( $("#button7").hasClass("border") ) {
+    bas.style.display = "inline";
+  }
+  else{
+    bas.style.display = "none";
+  }
+});
+$("#myBtn").click(function () {
+  if ( $("#button4").hasClass("border") ) {
+    sali.style.display = "inline";
+  }
+  else{
+    sali.style.display = "none";
+  }
+});
+$("#myBtn").click(function () {
+  if ( $(".butt>*").hasClass("border") ) {
+    message.style.display = "none";
+  }
+  else{
+    message.style.display = "inline";
+  }
+});
+var modal = document.getElementById('myModal');
 
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}

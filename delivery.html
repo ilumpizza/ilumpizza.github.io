@@ -10,18 +10,34 @@
 	<meta charset="UTF-8">
 	<title>Create your pizza</title>
 	<link rel="stylesheet" href="style/style.css">
+	<link rel="stylesheet" href="style/media.css">
+	<link rel="stylesheet" href="fonts/font-awesome/css/fontawesome-all.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 	<!-- <div class='preloader'></div> -->
+	<div id="navmenu">
+		<a href="create.html"><div class="line bt">
+			<p>Create pizza</p>
+		</div></a>
+		<a href="catalog.html"><div class="line bt">
+			<p>Catalog</p>
+		</div></a>
+		<a href="delivery.html"><div class="line bb">
+			<p>Delivery</p>
+		</div></a>
+		<a href="contact.html"><div class="line">
+			<p>Contact</p>
+		</div></a>
+	</div>
 	<header>
 		<ul class="n">
-			<li class="hov-logo"><a href="index.html"><img src="img/logo.png" alt="" class="logo"></a></li>
+			<li class="hov-logo"><a href="#section-1"><img src="img/logo.png" alt="" class="logo"></a></li>
 			<li class="hide"><a href="create.html">Create pizza</a></li>
 			<li class="hide"><a href="catalog.html">Catalog</a></li>
-			<li class="hide"><a href="">Delivery</a></li>
-			<li class="hide pr"><a href="">Contact</a></li>
+			<li class="hide"><a href="delivery.html">Delivery</a></li>
+			<li class="hide pr"><a href="contact.html">Contact</a></li>
 			<li class="nav"><a href="#" id="showHideContent"><i class="fas fa-bars"></i></a></li>
 		</ul>
 		<ul class="log">
@@ -29,20 +45,10 @@
 			<li class="hide"><a href="">Log In</a></li>
 		</ul>
 	</header>
-	<div id="navmenu">
-		<a href=""><div class="line bt">
-			<p>Catalog</p>
-		</div></a>
-		<a href=""><div class="line bb">
-			<p>sefges</p>
-		</div></a>
-		<a href=""><div class="line">
-			<p>Contact c</p>
-		</div></a>
-	</div>
-	<div id="container">
+	<div class="de">
 		<div class="title">
 			<p>Delivery</p>
+			<hr>
 		</div>
 		<div class="info">
 			<div class="detail">
@@ -56,34 +62,53 @@
 				</div>
 			</div>
 			<div class="map">
-				<img src="img/map.jpg" alt="">
+				<iframe src="https://www.google.ru/maps/d/embed?mid=1zk4bmDGX9xd4b38yvk-2A9SmJNmG0L2Q" width="100%" height="420"></iframe>
+			</div>
+		</div>
+		<div class="title">
+			<p>Payment</p>
+		</div>
+		<div class="info">
+			<div class="fifty">
+				<img src="img/eb2ca23dab8933c861e8650ec3c223f5.png" alt="">
+				<p>Pay for your favorite pizza ilumPizza in cash upon receipt.</p>
+			</div>
+			<div class="fifty">
+				<img src="img/card.png" alt="">
+				<p>Pay for your favorite pizza with a ilumPizza card upon receipt.</p>
 			</div>
 		</div>
 	</div>
 	<footer>
 		<div class="inner-foot">
 			<div class="foot-bl">
-				<img src="img/new2.png" alt="">
+				<img src="img/logo.png" alt="">
 			</div>
-			<div class="foot-bl">
+			<!-- <div class="foot-bl">
 				<p class="txt">Україна, 79005, м. Львів<br>вул. Кирила і Мефодія, 17а <br>(032) 260-04-16</p>
-			</div>
+			</div> -->
 			<div class="foot-bl f">
-				<p class="head">Додаткова інформація</p>
-				<p class="txt"><a href="сonditions.html">Умови вступу</a><br><a href="docs.html">Установчі Документи</a><br><a href="contact.html">Контакти</a></p>
-			</div>
-			<div class="foot-bl">
-				<p class="head">Гімназія</p>
-				<p class="txt"><a href="">Розклад уроків</a><br><a href="">Психологічна служба</a><br><a href="">Виховна робота</a></p>
-			</div>
-		</div>
-		<div class="footer-copyright">
-            <div class="container">
-            © 2018 LLG<!--  Made by
+				<p class="p0">Additional information</p>
+				<p class="txt">
+					<a href="сonditions.html">Terms of use</a><br>
+					<a href="docs.html">Licence</a><br>
+					<a href="contact.html">Investors</a></p>
+				</div>
+				<div class="foot-bl">
+					<p class="p0">For clients</p>
+					<p class="txt">
+						<a href="">Discounts</a><br>
+						<a href="delivery.html">Delivery</a><br>
+						<a href="contact.html">Contacts</a></p>
+					</div>
+				</div>
+				<div class="footer-copyright">
+					<div class="container">
+            © 2018 Unknown Technologies<!--  Made by
             <a class="grey-text text-lighten-4 right" href="#!">Ivan Kagitin</a> -->
-            </div>
           </div>
-	</footer>
-	<script src="script/script.js"></script>
-</body>
-</html>
+        </div>
+      </footer>
+      <script src="script/script.js"></script>
+    </body>
+    </html>

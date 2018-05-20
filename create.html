@@ -10,18 +10,34 @@
 	<meta charset="UTF-8">
 	<title>Create your pizza</title>
 	<link rel="stylesheet" href="style/style.css">
+	<link rel="stylesheet" href="style/media.css">
+	<link rel="stylesheet" href="fonts/font-awesome/css/fontawesome-all.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 	<!-- <div class='preloader'></div> -->
+	<div id="navmenu">
+		<a href="create.html"><div class="line bt">
+			<p>Create pizza</p>
+		</div></a>
+		<a href="catalog.html"><div class="line bt">
+			<p>Catalog</p>
+		</div></a>
+		<a href="delivery.html"><div class="line bb">
+			<p>Delivery</p>
+		</div></a>
+		<a href="contact.html"><div class="line">
+			<p>Contact</p>
+		</div></a>
+	</div>
 	<header>
 		<ul class="n">
-			<li class="hov-logo"><a href="index.html"><img src="img/logo.png" alt="" class="logo"></a></li>
+			<li class="hov-logo"><a href="#section-1"><img src="img/logo.png" alt="" class="logo"></a></li>
 			<li class="hide"><a href="create.html">Create pizza</a></li>
 			<li class="hide"><a href="catalog.html">Catalog</a></li>
 			<li class="hide"><a href="delivery.html">Delivery</a></li>
-			<li class="hide pr"><a href="">Contact</a></li>
+			<li class="hide pr"><a href="contact.html">Contact</a></li>
 			<li class="nav"><a href="#" id="showHideContent"><i class="fas fa-bars"></i></a></li>
 		</ul>
 		<ul class="log">
@@ -29,78 +45,137 @@
 			<li class="hide"><a href="">Log In</a></li>
 		</ul>
 	</header>
-	<div id="navmenu">
-		<a href=""><div class="line bt">
-			<p>Catalog</p>
-		</div></a>
-		<a href=""><div class="line bb">
-			<p>sefges</p>
-		</div></a>
-		<a href=""><div class="line">
-			<p>Contact c</p>
-		</div></a>
-	</div>
 	<div id="main">
-		<div class="pizza-block">
-			<img src="img/layers/tomatos.png" alt="" class="pizza low" id="sshow">
-			<img src="img/layers/olives.png" alt="" class="pizza low" id="sshow2">
-			<img src="img/layers/mushroom.png" alt="" class="pizza low" id="sshow3">
-			<img src="img/layers/saliami.png" alt="" class="pizza low" id="sshow4">
-			<img src="img/layers/onion.png" alt="" class="pizza low" id="sshow5">
-			<img src="img/layers/bacon.png" alt="" class="pizza low" id="sshow6">
-			<img src="img/layers/basil.png" alt="" class="pizza low" id="sshow7">
-			<img src="img/layers/pineapple.png" alt="" class="pizza low" id="sshow8">
-			<img src="img/layers/pepper.png" alt="" class="pizza low" id="sshow9">
-			<img src="img/layers/hotpepper.png" alt="" class="pizza low" id="sshow10">	
-			<img src="img/layers/dough.png" alt="" class="pizza1 low">
+		<div id="myModal" class="modal">
+			<div class="modal-content">
+    <!-- <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Modal Header</h2>
+    </div>
+    <div class="modal-body">
+      <p>Some text in the Modal Body</p>
+      <p>Some other text...</p>
+    </div>
+    <div class="modal-footer">
+      <h3>Modal Footer</h3>
+    </div> -->
+    <div class="order">
+    	<div class="title mb">
+    		<p>Order details</p>
+    		<hr width="25%">
+    		<span class="close">&times;</span>
+    	</div>
+    	<div class="text-info">
+    		<p>Pizza: <span id="prr"></span></p>
+    		<div class="ingr"><p> Ingredients: <span id="mes">You haven't chosen anything. Do you want to have an empty pizza?</span> <span id="tomat">Tomatos, </span> <span id="sali">Saliami, </span> <span id="bas">Basil, </span> <span id="hot">Hot pepper, </span> <span id="bac">Bacon, </span> <span id="oli">Olives, </span> <span id="oni">Onions, </span> <span id="pine">Pineapple, </span> <span id="mus">Mushroom, </span> <span id="pep">Pepper, </span> </p></div>
+    		<p>Delivery: 8 ₴ </p>
+    		<div id="prdev"></div>
+    	</div>
+    </div>
+    <div class="inputs">
+    	<input type="text" placeholder="Name">
+    	<input type="text" placeholder="Address">
+    	<input type="text" placeholder="E-mail" class="th3">
+    </div>
+    <div class="roww">
+    	<button class="custom-btn btn-12">Buy pizza</button>
+    </div>
+  </div>
+</div>
+<div class="title mb">
+	<p>Create pizza</p>
+	<hr>
+</div>
+<div class="pizza-block">
+	<img src="img/layers/tomatos.png" alt="" class="pizza low" id="sshow">
+	<img src="img/layers/olives.png" alt="" class="pizza low" id="sshow2">
+	<img src="img/layers/mushroom.png" alt="" class="pizza low" id="sshow3">
+	<img src="img/layers/saliami.png" alt="" class="pizza low" id="sshow4">
+	<img src="img/layers/onion.png" alt="" class="pizza low" id="sshow5">
+	<img src="img/layers/bacon.png" alt="" class="pizza low" id="sshow6">
+	<img src="img/layers/basil.png" alt="" class="pizza low" id="sshow7">
+	<img src="img/layers/pineapple.png" alt="" class="pizza low" id="sshow8">
+	<img src="img/layers/pepper.png" alt="" class="pizza low" id="sshow9">
+	<img src="img/layers/hotpepper.png" alt="" class="pizza low" id="sshow10">	
+	<img src="img/layers/dough.png" alt="" class="pizza1 low">
+</div>
+<div class="b-half">
+	<div class="button-block">
+		<div class="row aic">
+			<span class="chose">Choose size of your pizza:</span>
+			<div class="size">
+				<label for="n25"><input type='radio' name='psize' id='n25' price='5' checked><div class="num tf">25cm</div></label>
+				<label for="n30"><input type='radio' name='psize' price='8' id='n30' ><div class="num th">30cm</div></label>
+				<label for="n35"><input type='radio' name='psize' id='n35' price='12'><div class="num tv">35cm</div></label>
+			</div>
 		</div>
-		<div class="b-half">
-			<div class="button-block">
-				<div class="row aic">
-					<span class="chose">Choose size of your pizza:</span>
-					<div class="size">
-						<label for="n25"><input type='radio' name='psize' id='n25' price='5' checked><div class="num tf">25cm</div></label>
-						<label for="n30"><input type='radio' name='psize' price='8' id='n30' ><div class="num th">30cm</div></label>
-						<label for="n35"><input type='radio' name='psize' id='n35' price='12'><div class="num tv">35cm</div></label>
+		<div class="row">
+			<span class="chose">Choose the cheese you want:</span>
+			<label for="moz"><input type='radio' name='chee' id='moz' price='5' checked><div class="cheese mt fi wid">Mozzarella</div></label>
+			<label for="moz2"><input type='radio' name='chee' price='2' id='moz2'><div class="cheese mt se">Provolone</div></label>
+			<label for="moz3"><input type='radio' name='chee' price='3' id='moz3'><div class="cheese mt th">Cheddar</div></label>
+			<label for="moz4"><input type='radio' name='chee' price='4' id='moz4'><div class="cheese mt fo">Parmesan</div></label>
+		</div>
+		<div class="column">
+			<div class='butt' on-off='off' price='1' id="but"><div id="button"></div>Tomatos</div>
+			<div class='butt' on-off='off' price='2' id="but2"><div id="button2"></div>Olives</div>
+
+		</div>
+		<div class="column">
+			<div class='butt' on-off='off' price='6' id="but4"><div id="button4"></div>Saliami</div>
+			<div class='butt' on-off='off' price='2' id="but5"><div id="button5"></div>Onion</div>
+
+		</div>
+		<div class="column">
+			<div class='butt' on-off='off' price='2' id="but7"><div id="button7"></div>Basil</div>
+			<div class='butt' on-off='off' price='1' id="but8"><div id="button8"></div>Pineapple</div>
+		</div>	
+		<div class="column">
+			<div class='butt' on-off='off' price='6' id="but10"><div id="button10"></div>Hot pepper</div>
+			<div class='butt' on-off='off' price='20' id="but3"><div id="button3"></div>Mushroom</div>
+		</div>
+		<div class="column mr50">
+			<div class='butt' on-off='off' price='10' id="but6"><div id="button6"></div>Bacon</div>
+			<div class='butt' on-off='off' price='5' id="but9"><div id="button9"></div>Pepper</div>
+		</div>
+	</div>
+	<div id="price">
+		<span id="pr"></span>
+		<!-- <span class="buy"><a href="">Buy pizza</a></span> -->
+		<button class="custom-btn btn-12" id="myBtn">Buy pizza</button>
+	</div>
+</div>
+</div>
+<footer>
+	<div class="inner-foot">
+		<div class="foot-bl">
+			<img src="img/logo.png" alt="">
+		</div>
+			<!-- <div class="foot-bl">
+				<p class="txt">Україна, 79005, м. Львів<br>вул. Кирила і Мефодія, 17а <br>(032) 260-04-16</p>
+			</div> -->
+			<div class="foot-bl f">
+				<p class="p0">Additional information</p>
+				<p class="txt">
+					<a href="сonditions.html">Terms of use</a><br>
+					<a href="docs.html">Licence</a><br>
+					<a href="contact.html">Investors</a></p>
+				</div>
+				<div class="foot-bl">
+					<p class="p0">For clients</p>
+					<p class="txt">
+						<a href="">Discounts</a><br>
+						<a href="delivery.html">Delivery</a><br>
+						<a href="contact.html">Contacts</a></p>
 					</div>
 				</div>
-				<div class="row">
-					<span class="chose">Choose the cheese you want:</span>
-					<label for="moz"><input type='radio' name='chee' id='moz' price='5' checked><div class="cheese mt fi wid">Mozzarella</div></label>
-					<label for="moz2"><input type='radio' name='chee' price='2' id='moz2'><div class="cheese mt se">Provolone</div></label>
-					<label for="moz3"><input type='radio' name='chee' price='3' id='moz3'><div class="cheese mt th">Cheddar</div></label>
-					<label for="moz4"><input type='radio' name='chee' price='4' id='moz4'><div class="cheese mt fo">Parmesan</div></label>
-				</div>
-				<div class="column">
-					<div class='butt' on-off='off' price='1' id="but"><div id="button"></div>Tomatos</div>
-					<div class='butt' on-off='off' price='2' id="but2"><div id="button2"></div>Olives</div>
-					
-				</div>
-				<div class="column">
-					<div class='butt' on-off='off' price='6' id="but4"><div id="button4"></div>Saliami</div>
-					<div class='butt' on-off='off' price='2' id="but5"><div id="button5"></div>Onion</div>
-					
-				</div>
-				<div class="column">
-					<div class='butt' on-off='off' price='2' id="but7"><div id="button7"></div>Basil</div>
-					<div class='butt' on-off='off' price='1' id="but8"><div id="button8"></div>Pineapple</div>
-				</div>	
-				<div class="column">
-					<div class='butt' on-off='off' price='6' id="but10"><div id="button10"></div>Hot pepper</div>
-					<div class='butt' on-off='off' price='20' id="but3"><div id="button3"></div>Mushroom</div>
-				</div>
-				<div class="column mr50">
-					<div class='butt' on-off='off' price='10' id="but6"><div id="button6"></div>Bacon</div>
-					<div class='butt' on-off='off' price='5' id="but9"><div id="button9"></div>Pepper</div>
-				</div>
-			</div>
-			<div id="price">
-				<span id="pr"></span>
-				<!-- <span class="buy"><a href="">Buy pizza</a></span> -->
-				<button class="custom-btn btn-12">Buy pizza</button>
-			</div>
-		</div>
-	</div>
-	<script src="script/script.js"></script>
-</body>
-</html>
+				<div class="footer-copyright">
+					<div class="container">
+            © 2018 Unknown Technologies<!--  Made by
+            <a class="grey-text text-lighten-4 right" href="#!">Ivan Kagitin</a> -->
+          </div>
+        </div>
+      </footer>
+      <script src="script/script.js"></script>
+    </body>
+    </html>
