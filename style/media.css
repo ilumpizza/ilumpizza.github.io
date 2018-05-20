@@ -126,4 +126,17 @@
 		width: 100%;
     text-align: center;
 	}
+	.modal{
+		padding: 0;
+	}
+	.order{
+		width: 100%;
+	}
+	.inputs{
+		width: 95%;
+		margin: auto;
+	}
+	hr{
+		width: 50%;
+	}
 }
