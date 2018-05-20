@@ -2,7 +2,8 @@
 	.nav{
 		display: block;
 		padding-right: 0;
-		margin-right: 10px;
+		margin-right: 15px;
+    font-size: 23px;
 	}
 	.hide{
 		display: none;
@@ -55,5 +56,69 @@
 	}
 	.inner-foot{
 		padding-bottom: 0;
+	}
+	.cov-block{
+		width: 100%;
+	}
+	.info, .contact{
+		-webkit-flex-wrap: wrap;
+		-moz-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		-o-flex-wrap: wrap;
+		flex-wrap: wrap;
+	}
+	.detail, .map, .fifty, .inp{
+		width: 100%;
+	}
+	.addin{
+		width: 80%;
+	}
+	.icons{
+		margin-bottom: 40px;
+	}
+	.pizza-block{
+		width: 100%;
+	}
+	.mb{
+		margin-bottom: 0;
+	}
+	.chose{
+		text-align: center;
+	}
+	.b-half{
+		width: 100%;
+	}
+	.aic{
+		justify-content: center;
+	}
+	.row label{
+		width: 50%;
+	}
+	.cheese{
+		width: 70%;
+		margin: auto;
+	}
+	.mt{
+		margin: 25px auto;
+	}
+	.fo{
+		margin-right: auto!important;
+	}
+	/*.column{
+		display: none;
+	}*/
+	.column-mob{
+		display: block;
+		width: 40%;
+		margin: auto;
+	}
+	.column{
+		display: flex;
+    width: 100%;
+    justify-content: space-around;
+	}
+	.top>p{
+		width: 100%;
+    text-align: center;
 	}
 }
