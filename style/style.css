@@ -33,7 +33,7 @@
 	background-repeat: no-repeat;
 	visibility: visible;
 	opacity:1;
-	z-index: 10;
+	z-index: 99999;
 	top: 0;
 }
 .done{
@@ -627,14 +627,14 @@ a img{
 	margin-top: 110px;
 }
 .some{
-	font-size: 22px;
+	font-size: 24px;
 }
 .img-feat {
 	width: 80px;
 	height: 80px;
 }
 .par{
-	font-size: 18px;
+	font-size: 20px;
 }
 #morepart2{
 	width: 40%;
@@ -1105,7 +1105,7 @@ textarea{
 	justify-content: space-around;
 }
 .addin{
-	width: 36%;
+	width: 26%;
 	color: white;
 	font-size: 20px;
 }
